@@ -141,6 +141,7 @@ enum SortOption {
   topMonth,
   topYear,
   topAllTime,
+  controversial,
 }
 
 extension on SortOption {
@@ -152,6 +153,7 @@ extension on SortOption {
         SortOption.topMonth => 'top',
         SortOption.topYear => 'top',
         SortOption.topAllTime => 'top',
+        SortOption.controversial => 'controversial',
       };
 
   String? toEndpointT() => switch (this) {

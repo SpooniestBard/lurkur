@@ -60,6 +60,7 @@ extension SubredditBabSortOptionX on SortOption {
         SortOption.topMonth => 'top of the month',
         SortOption.topYear => 'top of the year',
         SortOption.topAllTime => 'top of all time',
+        SortOption.controversial => 'controversial'
       };
 
   IconData get icon => switch (this) {
@@ -70,5 +71,6 @@ extension SubredditBabSortOptionX on SortOption {
         SortOption.topMonth => Icons.favorite,
         SortOption.topYear => Icons.favorite,
         SortOption.topAllTime => Icons.favorite,
+        SortOption.controversial => Icons.sports_mma,
       };
 }
